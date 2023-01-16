@@ -15,5 +15,6 @@
 	<h1>Hello World!!</h1>
 	<%}%>
 
+	<a href="/helloweb/hello?id=ohydud">인사하기</a>
 </body>
 </html>
