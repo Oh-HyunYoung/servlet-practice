@@ -5,7 +5,7 @@
 		<artifactId>servlet-practice</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>helloweb</artifactId>
+	<artifactId>emaillist02</artifactId>
 	<packaging>war</packaging>
 	
 	<properties>
@@ -16,6 +16,13 @@
 	</properties>
 		
 	<dependencies>
+		<!-- MariaDB JDBC Driver -->
+		<dependency>
+		    <groupId>org.mariadb.jdbc</groupId>
+		    <artifactId>mariadb-java-client</artifactId>
+		    <version>3.0.8</version>
+		</dependency>
+				
 		<!-- servlet -->
 		<dependency>
 		    <groupId>javax.servlet</groupId>
@@ -29,17 +36,16 @@
 		    <version>2.2</version>
 		    <scope>provided</scope>
 		</dependency>
-	
 	</dependencies>
 	
 	<build>
-		<finalName>helloweb</finalName>
+		<finalName>emaillist02</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.3.2</version>
 			</plugin>
-		</plugins>	
-	</build>
+		</plugins>			
+	</build>	
 </project>

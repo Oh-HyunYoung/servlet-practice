@@ -5,7 +5,6 @@ public class EmaillistVo {
 	private String firstName;
 	private String lastName;
 	private String email;
-	
 	public Long getNo() {
 		return no;
 	}
@@ -35,6 +34,5 @@ public class EmaillistVo {
 		return "EmaillistVo [no=" + no + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
 				+ "]";
 	}
-	
 	
 }
