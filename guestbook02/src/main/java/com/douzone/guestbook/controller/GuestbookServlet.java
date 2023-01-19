@@ -26,10 +26,9 @@ public class GuestbookServlet extends HttpServlet {
 			rd.forward(request, response);
 		} else if("delete".equals(action)) {
 			String no = request.getParameter("no");
-			Long on2 = Long.parseLong(no);
 			String password = request.getParameter("password");
 			
-			new GuestbookDao().deleteByNoAndPassword(on2, password);
+			new GuestbookDao().deleteByNoAndPassword(Long.parseLong(no), password);
 
 			response.sendRedirect(request.getContextPath()+"/gb");
 		} else if("add".equals(action)) {
