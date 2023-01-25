@@ -14,7 +14,7 @@
 	${sVal }
 	
 	<h4>객체 출력</h4>
-	${obj } <br>
+	--${obj }-- <br>
 	${userVo.no } <br>
 	${userVo.name } <br>
 	
